@@ -41,11 +41,10 @@ y = np.zeros((1,nTs)) # set up (define) a vector for the output time series
 #     then indent 4 spaces and write the equation that
 #     describes how each input value in the vector x is 
 #     transformed to the output value in the vector y
-
+t = 0
 for i in range(0, nTs):
-    if  x[i]>0:
-         v = v*0.7
-    y[0,i]=v*x[i]
+    y[0,t]=v*x[t]
+    t +=1
 
 
 
